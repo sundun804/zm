@@ -31,7 +31,7 @@ npm run preview
 git init
 git add .
 git commit -m "feat: 众米创合企业官网"
-git remote add origin https://github.com/<你的用户名>/ZMCH.git
+git remote add origin https://github.com/sundun804/zm.git
 git push -u origin main
 ```
 
