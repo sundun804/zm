@@ -545,6 +545,15 @@ ul { list-style: none; }
   object-fit: contain;
 }
 
+.partner-logo-item-lg {
+  height: 110px;
+  grid-column: span 2;
+}
+
+.partner-logo-item-lg img {
+  max-height: 90px;
+}
+
 .partner-table-title {
   font-size: 1.2rem;
   font-weight: 600;
