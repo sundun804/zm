@@ -28,9 +28,7 @@ jobs:
       - run: npm ci
 
       - name: Build
-        run: GITHUB_PAGES=true npm run build
-        env:
-          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
