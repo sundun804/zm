@@ -528,6 +528,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   height: 80px;
+  overflow: hidden;
   transition: var(--transition);
   border: 1px solid transparent;
 }
@@ -545,13 +546,9 @@ ul { list-style: none; }
   object-fit: contain;
 }
 
-.partner-logo-item-lg {
-  height: 110px;
-  grid-column: span 2;
-}
-
-.partner-logo-item-lg img {
-  max-height: 90px;
+.partner-logo-item img.partner-logo-img-lg {
+  max-height: 48px;
+  transform: scale(2.1);
 }
 
 .partner-table-title {
