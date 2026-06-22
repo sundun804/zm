@@ -41,9 +41,7 @@ git push -u origin main
 
 ### 访问地址
 
-- 项目页：`https://<你的用户名>.github.io/ZMCH/`
-
-> 如果仓库名不是 `ZMCH`，需修改 `vite.config.js` 中的 `base` 路径为 `/你的仓库名/`。
+- 项目页：`https://sundun804.github.io/zm/`
 
 ### 自定义域名（可选）
 

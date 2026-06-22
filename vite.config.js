@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 
-// GitHub Pages 部署时设置 base 为仓库名，如 /ZMCH/
-// 本地开发或自定义域名部署时使用 /
-const base = process.env.GITHUB_PAGES === 'true' ? '/ZMCH/' : '/'
+// GitHub Pages 部署时 base 为 /zm/，对应 sundun804.github.io/zm/
+const base = process.env.GITHUB_PAGES === 'true' ? '/zm/' : '/'
 
 export default defineConfig({
   base,
