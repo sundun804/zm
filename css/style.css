@@ -26,6 +26,19 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-y: scroll;
+}
+
+/* During language switch: disable smooth scroll, transitions, animations, scroll anchoring */
+html.lang-switching {
+  scroll-behavior: auto !important;
+  overflow-anchor: none !important;
+}
+
+html.lang-switching,
+html.lang-switching * {
+  transition: none !important;
+  animation: none !important;
 }
 
 body {
@@ -33,7 +46,7 @@ body {
   color: var(--dark);
   background: var(--white);
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img { max-width: 100%; display: block; }
@@ -126,6 +139,44 @@ ul { list-style: none; }
   background: var(--dark);
   border-radius: 2px;
   transition: var(--transition);
+}
+
+/* ===== Language Toggle ===== */
+.lang-toggle {
+  margin-left: auto;
+  margin-right: 12px;
+  padding: 6px 16px;
+  background: var(--purple-bg);
+  color: var(--purple-dark);
+  border: 1px solid rgba(139, 111, 192, 0.25);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.lang-toggle:hover {
+  background: var(--purple);
+  color: var(--white);
+  border-color: var(--purple);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 111, 192, 0.3);
+}
+
+.lang-toggle:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .lang-toggle {
+    margin-right: 8px;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
 }
 
 /* ===== Hero ===== */
@@ -369,7 +420,7 @@ ul { list-style: none; }
 .section-desc {
   color: var(--gray);
   font-size: 1.05rem;
-  max-width: 560px;
+  max-width: 660px;
   margin: 0 auto;
 }
 
@@ -523,11 +574,11 @@ ul { list-style: none; }
 .partner-logo-item {
   background: var(--gray-light);
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 110px;
   overflow: hidden;
   transition: var(--transition);
   border: 1px solid transparent;
@@ -541,14 +592,13 @@ ul { list-style: none; }
 }
 
 .partner-logo-item img {
-  max-height: 48px;
+  max-height: 86px;
   max-width: 100%;
   object-fit: contain;
 }
 
 .partner-logo-item img.partner-logo-img-lg {
-  max-height: 48px;
-  transform: scale(2.1);
+  max-height: 86px;
 }
 
 .partner-table-title {

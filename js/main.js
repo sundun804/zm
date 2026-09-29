@@ -1,3 +1,19 @@
+// ===== i18n =====
+import { getLanguage, applyLanguage, toggleLanguage, updateToggleButton } from './i18n.js'
+
+// Apply saved language on load
+const savedLang = getLanguage()
+applyLanguage(savedLang)
+updateToggleButton(savedLang)
+
+// Language toggle button
+const langToggle = document.getElementById('langToggle')
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    toggleLanguage()
+  })
+}
+
 // ===== Navigation =====
 const header = document.getElementById('header')
 const navToggle = document.getElementById('navToggle')
