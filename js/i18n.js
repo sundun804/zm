@@ -3,7 +3,7 @@ export const translations = {
   zh: {
     meta: {
       title: '众米创合 | ZMCH — 臻选安全·新奇特·益智玩具',
-      description: '苏州众米创合儿童用品有限公司 — 儿童及青少年高端玩具全渠道供应链服务商，江浙沪知名玩具品牌首选合作伙伴'
+      description: '苏州众米创合儿童用品有限公司 — 儿童及青少年高端玩具全渠道供应链服务商，中国知名玩具品牌首选合作伙伴'
     },
     nav: {
       home: '首页',
@@ -37,7 +37,7 @@ export const translations = {
       desc: '公司坐落于苏州，主营儿童及青少年高端玩具',
       intro: '我司主营儿童及青少年高端玩具，主要服务于全国婴童连锁、潮玩渠道、高端商超渠道、精品玩具店及流通等全渠道市场。团队拥有30余人，销售团队10余人，仓库面积2000平方米，具备强大的供应链整合与渠道运营能力。',
       card1Title: '公司定位',
-      card1Desc: '成为知名玩具品牌在江浙沪的首选合作伙伴',
+      card1Desc: '成为知名玩具品牌在中国的首选合作伙伴',
       card2Title: '公司愿景',
       card2Desc: '成为全国连锁渠道及新开门店最具有策划及服务的公司',
       card3Title: '公司使命',
@@ -110,7 +110,7 @@ export const translations = {
       nameLabel: '公司名称',
       nameValue: '苏州众米创合儿童用品有限公司',
       areaLabel: '服务区域',
-      areaValue: '江浙沪及全国全渠道',
+      areaValue: '中国全渠道',
       sloganSafe: '● 安全',
       sloganNovel: '● 新奇特',
       sloganEdu: '● 益智'
@@ -151,7 +151,7 @@ export const translations = {
   en: {
     meta: {
       title: 'ZMCH | Premium Safe · Novel · Educational Toys',
-      description: 'Suzhou ZMCH Children\'s Products Co., Ltd. — Omnichannel supply chain service provider for high-end toys for children and teenagers. The preferred partner for renowned toy brands in Jiangsu, Zhejiang, and Shanghai.'
+      description: 'Suzhou ZMCH Children\'s Products Co., Ltd. — Omnichannel supply chain service provider for high-end toys for children and teenagers. The preferred partner for renowned toy brands in china.'
     },
     nav: {
       home: 'Home',
@@ -258,7 +258,7 @@ export const translations = {
       nameLabel: 'Company Name',
       nameValue: 'Suzhou ZMCH Children\'s Products Co., Ltd.',
       areaLabel: 'Service Area',
-      areaValue: 'Jiangsu-Zhejiang-Shanghai and nationwide omnichannel',
+      areaValue: 'china and nationwide omnichannel',
       sloganSafe: '● Safe',
       sloganNovel: '● Novel & Fun',
       sloganEdu: '● Educational'
